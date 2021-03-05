@@ -1,0 +1,27 @@
+name: codebarscan
+# author: Giuliano Jordao <giulianojordao@gmail.com>
+# url: https://github.com/giulianojordao
+description: A flutter plugin for scanning 2D barcodes and QRCodes using camera.
+version: 1.0.0
+homepage: https://github.com/giulianojordao/flutter_codebar_reader
+
+dependencies:
+  protobuf: ^2.0.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  effective_dart: ^1.2.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ^1.10.0
+
+flutter:
+  plugin:
+    platforms:
+      android: 
+        package: br.com.scrumlab.codebarscan
+        pluginClass: CodebarScanPlugin
+      ios: 
+        pluginClass: CodebarScanPlugin

@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="br.com.scrumlab.codebarscan">
+
+  <uses-permission android:name="android.permission.CAMERA" />
+
+  <application>
+    <activity android:name="br.com.scrumlab.codebarscan.CodebarScannerActivity" 
+    android:screenOrientation="portrait"
+    tools:replace="screenOrientation" />
+  </application>
+</manifest>
