@@ -12,7 +12,7 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView
 class CodebarScannerActivity : Activity(), ZXingScannerView.ResultHandler {
 
     init {
-        title = ""
+        title = "Trinus App"
     }
 
     private lateinit var config: Protos.Configuration
@@ -57,6 +57,7 @@ class CodebarScannerActivity : Activity(), ZXingScannerView.ResultHandler {
         }
 
         scannerView = ZXingAutofocusScannerView(this).apply {
+            setSoundEffectsEnabled(config.android.enableSoundEffects)    
             setAutoFocus(config.android.useAutoFocus)
             val restrictedFormats = mapRestrictedBarcodeTypes()
             if (restrictedFormats.isNotEmpty()) {
@@ -112,6 +113,7 @@ class CodebarScannerActivity : Activity(), ZXingScannerView.ResultHandler {
         super.onResume()
         setupScannerView()
         scannerView?.setResultHandler(this)
+        // scannerView.setOrientationLocked(false)
         if (config.useCamera > -1) {
             scannerView?.startCamera(config.useCamera)
         } else {
