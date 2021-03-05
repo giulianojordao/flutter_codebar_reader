@@ -36,10 +36,10 @@ class CodebarScannerActivity : Activity(), ZXingScannerView.ResultHandler {
                 Protos.CodebarFormat.interleaved2of5 to BarcodeFormat.ITF,
                 Protos.CodebarFormat.pdf417 to BarcodeFormat.PDF_417,
                 Protos.CodebarFormat.qr to BarcodeFormat.QR_CODE,
-                Protos.CodebarFormat.upce to BarcodeFormat.UPC_E
+                Protos.CodebarFormat.upce to BarcodeFormat.UPC_E,
                 Protos.CodebarFormat.brazilianboleto to BarcodeFormat.ITF,
                 Protos.CodebarFormat.febraban to BarcodeFormat.ITF,
-                Protos.CodebarFormat.itf to BarcodeFormat.ITF,
+                Protos.CodebarFormat.itf to BarcodeFormat.ITF
         )
 
     }
@@ -154,8 +154,8 @@ class CodebarScannerActivity : Activity(), ZXingScannerView.ResultHandler {
         finish()
     }
 
-    private fun mapRestrictedBarcodeTypes(): List<CodebarFormat> {
-        val types: MutableList<CodebarFormat> = mutableListOf()
+    private fun mapRestrictedBarcodeTypes(): List<BarcodeFormat> {
+        val types: MutableList<BarcodeFormat> = mutableListOf()
 
         this.config.restrictFormatList.filterNotNull().forEach {
             if (!formatMap.containsKey(it)) {
