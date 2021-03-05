@@ -5,7 +5,7 @@
 
   <application>
     <activity android:name="br.com.scrumlab.codebarscan.CodebarScannerActivity" 
-    android:screenOrientation="portrait"
-    tools:replace="screenOrientation" />
+              android:screenOrientation="sensor" 
+              android:configChanges="orientation|screenSize|keyboardHidden" />
   </application>
 </manifest>
