@@ -2,21 +2,22 @@
 [![GitHub stars](https://img.shields.io/github/stars/giulianojordao/flutter_codebar_reader)](https://github.com/giulianojordao/flutter_codebar_reader/stargazers)
 [![Pub](https://img.shields.io/endpoint?url=https%3A%2F%2Fgiulianojordao.github.io%2Fflutter_codebar_reader%2Fdata%2Fpublish.json)](https://pub.dartlang.org/packages/barcode_scan)
 [![GitHub forks](https://img.shields.io/github/forks/giulianojordao/flutter_codebar_reader)](https://github.com/giulianojordao/flutter_codebar_reader/network)
+[![GitHub identity](https://img.shields.io/endpoint?url=https%3A%2F%2Fgiulianojordao.github.io%2Fflutter_codebar_reader%2Fdata%2Fidentity.json)](https://github.com/giulianojordao/flutter_codebar_reader/identity)
+[![GitHub followers](https://img.shields.io/github/followers/giulianojordao?label=Followed&style=social)](https://github.com/giulianojordao/followers)
 [![GitHub tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fgiulianojordao%2Fflutter_codebar_reader
 )](https://github.com/giulianojordao/flutter_codebar_reader)
 
 
-# DEVELOPMENT HAS BEEN STOPPED
-Since there are many other libraries which provides more and better functionality in barcode scanning, I decided to discontinue the development of this project.
 
-I recommend the Firebase ML Vision package as an alternative: https://pub.dev/packages/firebase_ml_vision
+# Flutter library to read brazilian boletos barcodes
 
-<br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br>
+This is a revision of a version previously developed for Android and IOS. Supports for new bar code standards have been added, mainly aimed at commercial and financial activities in Brazil.
 
-# Barcode Scanner
+For general uses that do not specifically require this type of support, I suggest and recommend the Firebase ML Vision package as an alternative: https://pub.dev/packages/firebase_ml_vision
 
-A flutter plugin for scanning 2D barcodes and QR codes. 
+# Codebar Scanner
+
+A flutter plugin for scanning Brazilian Boletos, Brazilian bank checks, 2D barcodes and QR codes. 
 
 This provides a simple wrapper for two commonly used iOS and Android libraries:
 
@@ -25,6 +26,9 @@ iOS: https://github.com/mikebuss/MTBCodebarScanner
 Android: https://github.com/dm77/barcodescanner
 
 ### Features
+- [x] Scan Brazilian boletos (bankslip payment)
+- [x] Scan Brazilian bank checks 
+- [x] Scan 2D barcodes
 - [x] Scan 2D barcodes
 - [x] Scan QR codes
 - [x] Control the flash while scanning
