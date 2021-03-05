@@ -1,7 +1,10 @@
-[![GitHub license](https://img.shields.io/github/license/giulianojordao/flutter_codebar_reader.svg)](https://github.com/giulianojordao/flutter_codebar_reader/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/giulianojordao/flutter_codebar_reader)](https://github.com/giulianojordao/flutter_codebar_reader/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/giulianojordao/flutter_codebar_reader)](https://github.com/giulianojordao/flutter_codebar_reader/stargazers)
 [![Pub](https://img.shields.io/pub/v/barcode_scan.svg)](https://pub.dartlang.org/packages/barcode_scan)
 [![GitHub forks](https://img.shields.io/github/forks/giulianojordao/flutter_codebar_reader)](https://github.com/giulianojordao/flutter_codebar_reader/network)
+[![GitHub tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fgiulianojordao%2Fflutter_codebar_reader
+)](https://github.com/giulianojordao/flutter_codebar_reader)
+
 
 # DEVELOPMENT HAS BEEN STOPPED
 Since there are many other libraries which provides more and better functionality in barcode scanning, I decided to discontinue the development of this project.
